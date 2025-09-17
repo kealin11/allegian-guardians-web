@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoFull from '@/assets/logo-full.png';
+import logoFull from '@/assets/logo-icon.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
             <img 
               src={logoFull} 
               alt="Allegian Security Solutions" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 

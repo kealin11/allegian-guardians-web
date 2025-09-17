@@ -61,7 +61,7 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10" asChild>
+              <Button variant="outline" size="lg" className="border-white text-primary hover:bg-white/10" asChild>
                 <Link to="/services">View Our Services</Link>
               </Button>
             </div>
