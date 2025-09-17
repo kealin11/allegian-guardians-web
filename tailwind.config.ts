@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Allegian Custom Colors
+        "allegian-blue": {
+          DEFAULT: "hsl(var(--allegian-blue))",
+          light: "hsl(var(--allegian-blue-light))",
+          dark: "hsl(var(--allegian-blue-dark))",
+        },
+        "allegian-gray": {
+          DEFAULT: "hsl(var(--allegian-gray))",
+          light: "hsl(var(--allegian-gray-light))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +68,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+      },
+      boxShadow: {
+        "allegian": "var(--shadow-allegian)",
+        "card-allegian": "var(--shadow-card)",
       },
       borderRadius: {
         lg: "var(--radius)",
