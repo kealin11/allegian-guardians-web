@@ -1,42 +1,21 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     company: '',
+    product: '',
     service: '',
     message: ''
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. We'll get back to you within 24 hours.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      service: '',
-      message: ''
-    });
-  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -49,8 +28,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: "(555) 123-4567",
-      description: "Mon-Fri 8AM-6PM EST"
+      details: "083 326 7248",
+      description: "Mon-Fri 8AM-5PM"
     },
     {
       icon: Mail,
@@ -61,14 +40,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office",
-      details: "123 Security Blvd, Safety City, SC 12345",
+      details: "Vista Place, Suite 1, 1st Floor, Cnr Vorster & Glen Avenue, Glenanda, Johannersburg South, Gauteng",
       description: "Visit us by appointment"
-    },
-    {
-      icon: Clock,
-      title: "Emergency",
-      details: "24/7 Emergency Line",
-      description: "(555) 911-SAFE"
     }
   ];
 
@@ -101,7 +74,15 @@ const Contact = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    action="https://formsubmit.co/info@allegian.co.za"
+                    method="POST"
+                    className="space-y-6"
+                  >
+                    {/* Hidden inputs */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="name">Full Name *</Label>
@@ -152,6 +133,23 @@ const Contact = () => {
                       </div>
                     </div>
 
+                    {/* Products Dropdown */}
+                    <div>
+                      <Label htmlFor="product">Product Interest</Label>
+                      <select
+                        id="product"
+                        name="product"
+                        value={formData.product}
+                        onChange={handleChange}
+                        className="mt-1 w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                      >
+                        <option value="">Select a product</option>
+                        <option value="intrusion-detection">Intrusion Detection</option>
+                        <option value="professional-services">Professional Services</option>
+                      </select>
+                    </div>
+
+                    {/* Services Dropdown */}
                     <div>
                       <Label htmlFor="service">Service Interest</Label>
                       <select
@@ -162,13 +160,12 @@ const Contact = () => {
                         className="mt-1 w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select a service</option>
-                        <option value="physical-security">Physical Security</option>
-                        <option value="cctv-surveillance">CCTV Surveillance</option>
-                        <option value="access-control">Access Control Systems</option>
-                        <option value="event-security">Event Security</option>
-                        <option value="monitoring">24/7 Monitoring</option>
-                        <option value="consulting">Security Consulting</option>
-                        <option value="other">Other</option>
+                        <option value="distribution">Distribution of high-performance systems</option>
+                        <option value="installation">Installation & commissioning of integrated solutions</option>
+                        <option value="training">Training on system operation & safety</option>
+                        <option value="servicing">Servicing & maintenance</option>
+                        <option value="risk-assessment">Risk assessments & consulting</option>
+                        <option value="quality-assurance">Quality assurance & compliance</option>
                       </select>
                     </div>
 
@@ -221,23 +218,6 @@ const Contact = () => {
                   </Card>
                 ))}
               </div>
-
-              {/* Emergency Notice */}
-              <Card className="mt-8 border-destructive/20 bg-destructive/5">
-                <CardContent className="pt-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-destructive/20 rounded-full flex items-center justify-center">
-                      <Phone className="h-4 w-4 text-destructive" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Emergency Security</h4>
-                      <p className="text-sm text-muted-foreground">
-                        For immediate security emergencies, call our 24/7 hotline: <span className="font-medium">(555) 911-SAFE</span>
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

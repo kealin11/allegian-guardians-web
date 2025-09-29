@@ -47,12 +47,10 @@ const About = () => {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Our Purpose</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Founded with a vision to revolutionize the security industry, Allegian combines 
-              traditional security expertise with cutting-edge technology. We understand that 
-              security is not just about protection—it's about peace of mind, trust, and enabling 
-              businesses and communities to thrive.
+             Built on consistency, duty, faithfulness, and integrity, Allegian is committed to delivering
+              future-ready security solutions that protect people, property, and reputation.
             </p>
           </div>
 
@@ -60,15 +58,14 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
               <p className="text-muted-foreground mb-6">
-                To provide comprehensive, innovative security solutions that protect our clients' 
-                assets, people, and peace of mind while fostering safe environments where businesses 
-                and communities can flourish.
+               To provide innovative and dependable security solutions that safeguard what matters
+                most—guided by expertise, integrity, and an unwavering commitment to excellence.
               </p>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
               <p className="text-muted-foreground">
-                To be the leading security solutions provider, recognized for our integrity, 
-                innovation, and unwavering commitment to client safety and satisfaction.
+                To be a trusted leader in redefining security through innovation, integrity, and
+                empowerment—delivering tomorrow’s solutions, today.
               </p>
             </div>
 
@@ -131,17 +128,18 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl font-bold text-foreground mb-6">Meet Our Founder</h2>
-                <h3 className="text-2xl font-semibold text-primary mb-4">Vicel Johnson</h3>
+                <h3 className="text-2xl font-semibold text-primary mb-4">Vicel Moshapo</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  With over 15 years of experience in the security industry, Vicel founded 
-                  Allegian with a simple yet powerful vision: to create a security company 
-                  that truly puts clients first. His background in both corporate security 
-                  and technology has shaped Allegian's innovative approach to modern security challenges.
+                  Vicel Moshapo is the visionary founder behind Allegian’s mission to revolutionize security
+                  technology. With decades of hands-on experience and a passion for innovation, Mr. Moshapo
+                  leads with purpose—driving product development, mentoring emerging talent, and setting the
+                  tone for a company built on integrity and ingenuity.
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Under his leadership, Allegian has grown to become a trusted partner for 
-                  businesses across the region, known for our reliability, professionalism, 
-                  and commitment to excellence in every aspect of our service.
+                  Mr. Moshapo’s expertise in risk assessment and quality assurance ensures that every Allegian
+                  product meets global standards for reliability and performance. As Allegian scales, his
+                  leadership continues to inspire a new generation of technologists and entrepreneurs
+                  committed to building safer, smarter systems.
                 </p>
                 <Button asChild>
                   <Link to="/contact">Get in Touch</Link>

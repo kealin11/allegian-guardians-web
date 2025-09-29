@@ -67,7 +67,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Stats Card */}
+          {/* Stats Card - Why Choose Allegian */}
           <div className="flex justify-center lg:justify-end">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-allegian max-w-md w-full">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
@@ -76,29 +76,29 @@ const Hero = () => {
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">10+</div>
-                  <div className="text-sm text-white/80">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">500+</div>
-                  <div className="text-sm text-white/80">Clients Protected</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">24/7</div>
-                  <div className="text-sm text-white/80">Monitoring</div>
+                  <div className="text-3xl font-bold text-white mb-2">43+</div>
+                  <div className="text-sm text-white/80">Years Expertise</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-white mb-2">100%</div>
-                  <div className="text-sm text-white/80">Satisfaction</div>
+                  <div className="text-sm text-white/80">Black-Owned</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white mb-2">Inclusive</div>
+                  <div className="text-sm text-white/80">Growth Focus</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white mb-2">Integrity</div>
+                  <div className="text-sm text-white/80">& Trust</div>
                 </div>
               </div>
 
               <div className="mt-6 pt-6 border-t border-white/20">
                 <p className="text-center text-sm text-white/80">
-                  "Professional, reliable, and always there when we need them."
+                  "More than a provider — a partner in progress."
                 </p>
                 <p className="text-center text-xs text-white/60 mt-2">
-                  - Satisfied Client
+                  – Allegian Commitment
                 </p>
               </div>
             </div>

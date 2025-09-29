@@ -1,4 +1,4 @@
-import { ArrowRight, Shield, Target, Award } from 'lucide-react';
+import { ArrowRight, Shield, Target, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -6,27 +6,27 @@ import founderImage from '@/assets/founder-vicel.jpg';
 
 const AboutPreview = () => {
   const stats = [
-    { number: "10+", label: "Years Experience" },
-    { number: "500+", label: "Clients Protected" },
-    { number: "24/7", label: "Monitoring" },
-    { number: "100%", label: "Satisfaction" }
+    { number: "43+", label: "Years Experience" },
+    { number: "100%", label: "Black-Owned" },
+    { number: "Inclusive", label: "Growth Focused" },
+    { number: "Trusted", label: "Partner in Progress" }
   ];
 
   const values = [
     {
-      icon: Shield,
-      title: "Security First",
-      description: "Your safety is our top priority in everything we do."
+      icon: Users,
+      title: "Empowerment Through Ownership",
+      description: "As a 100% black-owned startup, Allegian is part of a broader movement toward inclusion and economic empowerment."
     },
     {
       icon: Target,
-      title: "Precision & Excellence",
-      description: "We deliver precise, reliable security solutions."
+      title: "Partnerships & Growth",
+      description: "We build thoughtful partnerships, support inclusive growth, and create opportunities for emerging talent."
     },
     {
       icon: Award,
-      title: "Professional Standards",
-      description: "Highly trained, licensed security professionals."
+      title: "Integrity & Accountability",
+      description: "We lead with humility, purpose, and accountability while striving to earn your trust."
     }
   ];
 
@@ -40,9 +40,10 @@ const AboutPreview = () => {
               About Allegian
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Founded with a vision to revolutionize the security industry, Allegian combines 
-              traditional security expertise with cutting-edge technology. We understand that 
-              security is not just about protection—it's about peace of mind.
+              Allegian is a young company with deep roots. Founded by Vicel Moshapo—a dedicated security specialist with over 43 years of experience—Allegian was born from a desire to make meaningful contributions to the security industry. Mr. Moshapo’s lifelong commitment to technical excellence and mentorship continues to guide our journey as we grow, learn, and serve.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              We approach every challenge with care, every partnership with respect, and every solution with integrity. Our goal is simple: to build reliable security systems that protect people and property, while creating opportunities for others to thrive.
             </p>
 
             {/* Stats */}
@@ -86,12 +87,12 @@ const AboutPreview = () => {
                 <div className="relative">
                   <img
                     src={founderImage}
-                    alt="Vicel Johnson, Founder of Allegian"
+                    alt="Vicel Moshapo, Founder of Allegian"
                     className="w-full h-80 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <h3 className="text-xl font-semibold mb-1">Vicel Johnson</h3>
+                    <h3 className="text-xl font-semibold mb-1">Vicel Moshapo</h3>
                     <p className="text-sm text-white/90">Founder & CEO</p>
                   </div>
                 </div>
@@ -102,12 +103,11 @@ const AboutPreview = () => {
             <Card className="bg-gradient-card shadow-card-allegian">
               <CardContent className="p-6 text-center">
                 <blockquote className="text-lg font-medium text-foreground mb-4">
-                  "Our mission is to provide comprehensive, innovative security solutions 
-                  that protect our clients' peace of mind."
+                  "We don’t claim to have all the answers—but we’re here to listen, learn, and work hard to earn your trust. We’re more than a provider—we’re a partner in progress."
                 </blockquote>
                 <div className="flex items-center justify-center space-x-2">
                   <Shield className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium text-muted-foreground">Security Solutions for Tomorrow</span>
+                  <span className="text-sm font-medium text-muted-foreground">Partner in Progress</span>
                 </div>
               </CardContent>
             </Card>

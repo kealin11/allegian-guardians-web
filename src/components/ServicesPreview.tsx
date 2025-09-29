@@ -1,4 +1,4 @@
-import { Shield, Camera, Lock, Users, ArrowRight } from 'lucide-react';
+import { Shield, Building, Wrench, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -7,27 +7,33 @@ const ServicesPreview = () => {
   const services = [
     {
       icon: Shield,
-      title: "Physical Security",
-      description: "Professional on-site security officers and patrol services to protect your premises 24/7.",
-      features: ["Security Officers", "Mobile Patrols", "Access Control"]
+      title: "Products & Services",
+      description: "Comprehensive suite of solutions tailored for commercial, financial, industrial, and governmental sectors.",
+      features: [
+        "High-performance system distribution",
+        "Integrated solutions installation",
+        "Training & safety operations"
+      ]
     },
     {
-      icon: Camera,
-      title: "CCTV Surveillance",
-      description: "Advanced video surveillance systems with remote monitoring and intelligent analytics.",
-      features: ["HD Cameras", "Remote Monitoring", "Cloud Storage"]
+      icon: Building,
+      title: "Intrusion Detection",
+      description: "Advanced products to safeguard facilities with the latest security technology.",
+      features: [
+        "Alarm systems & CCTV",
+        "Electric fencing",
+        "Gate automation"
+      ]
     },
     {
-      icon: Lock,
-      title: "Access Control",
-      description: "Modern access control solutions including keycard systems and biometric readers.",
-      features: ["Keycard Systems", "Biometric Access", "Visitor Management"]
-    },
-    {
-      icon: Users,
-      title: "Event Security",
-      description: "Comprehensive event security services for corporate functions and private events.",
-      features: ["Crowd Control", "VIP Protection", "Event Coordination"]
+      icon: Wrench,
+      title: "Professional Services",
+      description: "Expert support services to build, maintain, and enhance your security infrastructure.",
+      features: [
+        "Manufacturing & installation",
+        "Training & servicing",
+        "Consulting & quality assurance"
+      ]
     }
   ];
 
@@ -37,16 +43,15 @@ const ServicesPreview = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Our Security Services
+            Our Products & Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive security solutions designed to protect your business, 
-            property, and people with cutting-edge technology and expert personnel.
+            Delivering high-performance systems, advanced intrusion detection, and professional services designed to secure and empower organizations across all sectors.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
             <Card 
               key={index} 

@@ -64,22 +64,17 @@ const CTASection = () => {
             </Button>
           </div>
           
-          <div className="flex items-center justify-center space-x-4 pt-4">
+          <div className="flex items-center justify-center pt-4">
             <div className="flex items-center text-white/80">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="text-sm">Call: (555) 123-4567</span>
-            </div>
-            <div className="w-px h-4 bg-white/30"></div>
-            <div className="flex items-center text-white/80">
-              <Clock className="h-4 w-4 mr-2" />
-              <span className="text-sm">24/7 Emergency: (555) 911-SAFE</span>
+              <span className="text-sm">Call: 083 326 7248</span>
             </div>
           </div>
         </div>
 
         {/* Trust Indicators */}
         <div className="mt-12 pt-8 border-t border-white/20 text-center">
-          <p className="text-white/60 text-sm mb-4">Trusted by 500+ businesses across the region</p>
+          <p className="text-white/60 text-sm mb-4">Innovating to stay ahead of threats</p>
           <div className="flex justify-center items-center space-x-8 text-white/40">
             <div className="text-xs">Licensed & Insured</div>
             <div className="w-px h-4 bg-white/20"></div>

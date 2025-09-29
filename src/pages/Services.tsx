@@ -1,4 +1,4 @@
-import { Shield, Camera, Lock, Users, Clock, Zap } from 'lucide-react';
+import { Shield, Wrench, BookOpen, Settings, ClipboardCheck, Building } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -8,39 +8,40 @@ const Services = () => {
   const services = [
     {
       icon: Shield,
-      title: "Physical Security",
-      description: "Comprehensive on-site security services including trained security officers, patrol services, and access control management.",
-      features: ["24/7 Security Officers", "Mobile Patrols", "Access Control", "Emergency Response"]
+      title: "Products & Services",
+      description: "Allegian offers a comprehensive suite of services tailored for commercial, financial, industrial, and governmental sectors.",
+      features: [
+        "Distribution of high-performance systems",
+        "Installation & commissioning of integrated solutions",
+        "Training on system operation & safety",
+        "Servicing & maintenance",
+        "Risk assessments & consulting",
+        "Quality assurance & compliance"
+      ]
     },
     {
-      icon: Camera,
-      title: "CCTV Surveillance",
-      description: "Advanced video surveillance systems with remote monitoring, analytics, and cloud storage solutions.",
-      features: ["HD Cameras", "Remote Monitoring", "Motion Detection", "Cloud Storage"]
+      icon: Building,
+      title: "Intrusion Detection",
+      description: "Advanced security products to protect facilities with cutting-edge technology.",
+      features: [
+        "Alarm systems and advanced CCTV surveillance equipment",
+        "Electric fencing",
+        "Gate automation",
+        "Advanced electronic locks"
+      ]
     },
     {
-      icon: Lock,
-      title: "Access Control Systems",
-      description: "Modern access control solutions including keycard systems, biometric readers, and smart locks.",
-      features: ["Keycard Systems", "Biometric Access", "Smart Locks", "Visitor Management"]
-    },
-    {
-      icon: Users,
-      title: "Event Security",
-      description: "Professional event security services for corporate events, concerts, and private functions.",
-      features: ["Crowd Control", "VIP Protection", "Event Coordination", "Emergency Planning"]
-    },
-    {
-      icon: Clock,
-      title: "24/7 Monitoring",
-      description: "Round-the-clock monitoring services with immediate response to security alerts and incidents.",
-      features: ["Live Monitoring", "Instant Alerts", "Response Team", "Incident Reports"]
-    },
-    {
-      icon: Zap,
-      title: "Security Consulting",
-      description: "Expert security assessments and consulting services to identify vulnerabilities and improve security posture.",
-      features: ["Risk Assessment", "Security Audits", "Custom Solutions", "Training Programs"]
+      icon: Wrench,
+      title: "Professional Services",
+      description: "Expert services designed to support and enhance security infrastructures.",
+      features: [
+        "Manufacturing",
+        "Installation",
+        "Training",
+        "Servicing",
+        "Consulting",
+        "Quality assurance"
+      ]
     }
   ];
 
@@ -54,11 +55,10 @@ const Services = () => {
         <div className="absolute inset-0 bg-primary/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Our Security Services
+            Our Products & Services
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Comprehensive security solutions tailored to protect your business, 
-            property, and people with cutting-edge technology and expert personnel.
+            Comprehensive solutions tailored to protect and empower commercial, financial, industrial, and governmental sectors.
           </p>
         </div>
       </section>

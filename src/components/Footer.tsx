@@ -60,7 +60,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 mr-3 text-primary" />
-                (555) 123-4567
+                083 326 7248
               </li>
               <li className="flex items-center text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 mr-3 text-primary" />
@@ -68,8 +68,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-3 text-primary mt-0.5" />
-                123 Security Blvd<br />
-                Safety City, SC 12345
+                Vista Place, Suite 1, 1st Floor, Cnr Vorster & Glen Avenue<br />
+                Glenanda, Johannersburg South, Gauteng
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © 2024 Allegian Security Solutions. All rights reserved.
+              © 2025 Allegian Security Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
               <Link to="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
