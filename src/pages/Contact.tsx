@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office",
-      details: "Vista Place, Suite 1, 1st Floor, Cnr Vorster & Glen Avenue, Glenanda, Johannersburg South, Gauteng",
+      details: "Vista Place, Suite 1, 1st Floor, Cnr Vorster & Glen Avenue, Glenanda, Johannesburg, Gauteng",
       description: "Visit us by appointment"
     }
   ];
@@ -50,9 +50,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-hero">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Contact Us
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Ready to secure your business? Get in touch for a free consultation 
             and customized security solution.
@@ -79,9 +77,10 @@ const Contact = () => {
                     method="POST"
                     className="space-y-6"
                   >
-                    {/* Hidden inputs */}
+                    {/* Required hidden fields for Formsubmit */}
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+                    <input type="hidden" name="_subject" value="New Contact Form Submission" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
@@ -133,7 +132,7 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    {/* Products Dropdown */}
+                    {/* Product Dropdown */}
                     <div>
                       <Label htmlFor="product">Product Interest</Label>
                       <select
@@ -149,7 +148,7 @@ const Contact = () => {
                       </select>
                     </div>
 
-                    {/* Services Dropdown */}
+                    {/* Service Dropdown */}
                     <div>
                       <Label htmlFor="service">Service Interest</Label>
                       <select
@@ -192,7 +191,7 @@ const Contact = () => {
               </Card>
             </div>
 
-            {/* Contact Information */}
+            {/* Contact Info */}
             <div>
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Get in Touch</h2>
