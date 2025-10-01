@@ -79,7 +79,7 @@ const Contact = () => {
                   >
                     {/* Required hidden fields for Formsubmit */}
                     <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+                    <input type="hidden" name="_next" value="https://allegian-guardians-web.vercel.app/" />
                     <input type="hidden" name="_subject" value="New Contact Form Submission" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
