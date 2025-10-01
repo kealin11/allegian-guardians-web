@@ -80,14 +80,6 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © 2025 Allegian Security Solutions. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
-              <Link to="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

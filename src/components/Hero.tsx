@@ -1,7 +1,7 @@
 import { ArrowRight, Shield, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/hero-security.jpg';
+import heroImage from '@/assets/welcome.jpg';
 
 const Hero = () => {
   const features = [

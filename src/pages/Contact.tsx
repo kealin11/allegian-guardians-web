@@ -75,7 +75,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <form
-                    action="https://formsubmit.co/info@allegian.co.za"
+                    action="https://formsubmit.co/killdock11@gmail.com"
                     method="POST"
                     className="space-y-6"
                   >
