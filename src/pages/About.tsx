@@ -5,29 +5,6 @@ import { Link } from 'react-router-dom';
 import founderImage from '@/assets/founder-vicel.jpg';
 
 const About = () => {
-  const values = [
-    {
-      icon: Shield,
-      title: "Security First",
-      description: "We prioritize the safety and security of our clients above all else, implementing comprehensive solutions that protect what matters most."
-    },
-    {
-      icon: Target,
-      title: "Precision & Excellence",
-      description: "Our commitment to excellence drives us to deliver precise, reliable security solutions that exceed industry standards."
-    },
-    {
-      icon: Users,
-      title: "Client Partnership",
-      description: "We build lasting relationships with our clients, working as trusted partners to understand and meet their unique security needs."
-    },
-    {
-      icon: Award,
-      title: "Professional Standards",
-      description: "All our security professionals are highly trained, licensed, and continuously educated to maintain the highest standards of service."
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -72,20 +49,20 @@ const About = () => {
             <div className="bg-gradient-card rounded-lg p-8 shadow-card-allegian">
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">10+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">43+</div>
                   <div className="text-sm text-muted-foreground">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Clients Served</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                  <div className="text-sm text-muted-foreground">Monitoring</div>
-                </div>
-                <div>
                   <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                  <div className="text-sm text-muted-foreground">Black Owned</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-2">Inclusive</div>
+                  <div className="text-sm text-muted-foreground">Growth Focus</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-primary mb-2">Integrity</div>
+                  <div className="text-sm text-muted-foreground">& Trust</div>
                 </div>
               </div>
             </div>
@@ -93,30 +70,37 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Why Choose Us */}
       <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Our Values</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide our work and define our commitment to excellence.
+            <h2 className="text-3xl font-bold text-foreground mb-4">Why Choose Allegian?</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Allegian is a new name in the security industry, but our commitment runs deep. 
+              Founded with a clear purpose—to deliver reliable, high-performance security solutions—
+              we’re building a company that puts people first, listens closely, and works hard to earn trust.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <Card key={index} className="text-center h-full">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg">{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{value.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-background p-6 rounded-lg shadow-card-allegian">
+              <h3 className="text-xl font-semibold text-primary mb-3">Delivering High-Performance Security Products</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our products are built to perform in demanding environments. From electronic doors to surveillance systems, we focus on durability, reliability, and ease of use—so you can feel confident that your security is never compromised.
+              </p>
+            </div>
+            <div className="bg-background p-6 rounded-lg shadow-card-allegian">
+              <h3 className="text-xl font-semibold text-primary mb-3">Conducting Thoughtful Risk Assessments</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We take a proactive approach to identifying vulnerabilities and designing tailored solutions. Our team works closely with clients to understand their context and develop practical strategies that address risks before they escalate.
+              </p>
+            </div>
+            <div className="bg-background p-6 rounded-lg shadow-card-allegian">
+              <h3 className="text-xl font-semibold text-primary mb-3">Building Long-Term Relationships</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                At Allegian, we believe strong partnerships are the foundation of great security. We’re here to listen, adapt, and grow with you—offering ongoing support and solutions that evolve alongside your business.
+              </p>
+            </div>
           </div>
         </div>
       </section>
