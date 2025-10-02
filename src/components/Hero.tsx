@@ -5,10 +5,10 @@ import heroImage from '@/assets/welcome.jpg';
 
 const Hero = () => {
   const features = [
-    "24/7 Professional Monitoring",
-    "Licensed & Insured Security",
     "Advanced Technology Solutions",
-    "Rapid Emergency Response"
+    "Professional Security Services",
+    "Advanced Technology Solutions",
+    "Distribution and Installation"
   ];
 
   return (

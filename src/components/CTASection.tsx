@@ -7,18 +7,18 @@ const CTASection = () => {
   const benefits = [
     {
       icon: Shield,
-      title: "Free Security Assessment",
-      description: "Get a comprehensive evaluation of your current security needs"
+      title: "Delivering High-Performance Security Products",
+      description: "Our products are built to perform in demanding environments. From electronic doors tosurveillance systems, we focus on durability, reliability, and ease of use—so you can feel confident that your security is never compromised."
     },
     {
       icon: Clock,
-      title: "24/7 Support",
-      description: "Round-the-clock monitoring and emergency response services"
+      title: "Conducting Thoughtful Risk Assessments",
+      description: "We take a proactive approach to identifying vulnerabilities and designing tailored solutions. Our team works closely with clients to understand their context and develop practical strategies that address risks before they escalate."
     },
     {
       icon: Phone,
-      title: "Immediate Response",
-      description: "Quick deployment of security solutions when you need them most"
+      title: "Building Long-Term Relationships",
+      description: "At Allegian, we believe strong partnerships are the foundation of great security. We’re here to listen, adapt, and grow with you—offering ongoing support and solutions that evolve alongside your business."
     }
   ];
 
