@@ -7,7 +7,6 @@ const Hero = () => {
   const features = [
     "Advanced Technology Solutions",
     "Professional Security Services",
-    "Advanced Technology Solutions",
     "Distribution and Installation"
   ];
 
